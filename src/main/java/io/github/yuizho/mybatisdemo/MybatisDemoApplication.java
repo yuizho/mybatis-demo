@@ -27,6 +27,7 @@ public class MybatisDemoApplication {
 			city.setName("San Francisco");
 			city.setState("CA");
 			city.setCountry("US");
+			city.setId(1L);
 			cityMapper.insert(city);
 			System.out.println(this.cityMapper.findById(city.getId()));
 		};
